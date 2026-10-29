@@ -96,7 +96,7 @@ const jsonLd = {
 			jobTitle: 'Software Engineer',
 			image: 'https://aadarshsingh.in/img/aadarshimprove.jpeg',
 			sameAs: [
-				'https://github.com/aadarshbabu',
+				'https://github.com/onlyaadarsh',
 				'https://medium.com/@aadarshsingh121',
 			],
 		},
