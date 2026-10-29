@@ -15,6 +15,11 @@ import content from '@/content/projects/featured.json'
 export default function FeaturedProject({ content }, index) {
 
 	const { project, url, repo, descriptionTitle, description, stack, imageOptions, images, redirect } = content
+	const imagePresentation = imageOptions?.presentation === 'browser'
+		? css.browserPreview
+		: imageOptions?.presentation === 'screenshot'
+			? css.screenshotPreview
+			: ''
 
 	const controls = useAnimation();
 	const { ref, inView } = useInView({
@@ -59,10 +64,12 @@ export default function FeaturedProject({ content }, index) {
 				</div>
 			</div>
 
-			<div className={css.imageContainer}>
+			<div className={`${css.imageContainer} ${imagePresentation}`}>
 				<span className={`${css.imageAnimationContainer}`}>
 					{images.map(({ key, url, hover, h, w }, index) => {
-						hover = (hover === 'left') ? hoverLeft : hoverRight
+						hover = imagePresentation
+							? hoverStatic
+							: (hover === 'left') ? hoverLeft : hoverRight
 						return (
 							<m.div key={`${index}-${key}`} variants={item}>
 								<m.div variants={hover}>
@@ -144,3 +151,11 @@ const hoverRight = {
 	}
 }
 
+const hoverStatic = {
+	rest: {
+		x: 0
+	},
+	hover: {
+		x: 0
+	}
+}

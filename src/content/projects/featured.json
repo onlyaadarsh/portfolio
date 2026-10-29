@@ -1,19 +1,120 @@
 [
 	{
+		"project": "Rewire",
+		"url": "https://heyrewire.com",
+		"repo": "Private",
+		"descriptionTitle": "Mental health companion",
+		"description": "An evidence-informed AI companion for structured self-reflection, grounding exercises, and cognitive reframing.",
+		"imageOptions": {
+			"presentation": "screenshot"
+		},
+		"redirect": "https://heyrewire.com",
+		"images": [
+			{
+				"key": "mock-stack",
+				"hover": "right",
+				"h": "758",
+				"w": "1644",
+				"url": "/img/msc-mock_stack/rewire-screenshot.png"
+			}
+		],
+		"stack": [
+			{
+				"key": "nextjs",
+				"name": "Next.js",
+				"type": "devicon"
+			},
+			{
+				"key": "typescript",
+				"name": "TypeScript",
+				"type": "devicon"
+			},
+			{
+				"key": "postgresql",
+				"name": "PostgreSQL",
+				"type": "devicon"
+			},
+			{
+				"key": "neo4j",
+				"name": "Neo4j",
+				"type": "devicon"
+			},
+			{
+				"key": "git",
+				"name": "Git",
+				"type": "devicon"
+			}
+		]
+	},
+	{
+		"project": "The Coder",
+		"url": "https://code.thecoder.in",
+		"repo": "Private",
+		"descriptionTitle": "Developer platform",
+		"description": "A focused coding workspace where developers solve, execute, and verify algorithm challenges through curated interview tracks.",
+		"imageOptions": {
+			"presentation": "screenshot"
+		},
+		"redirect": "https://code.thecoder.in",
+		"images": [
+			{
+				"key": "mock-stack",
+				"hover": "left",
+				"h": "763",
+				"w": "1580",
+				"url": "/img/msc-mock_stack/code-thecoder-screenshot.png"
+			}
+		],
+		"stack": [
+			{
+				"key": "nextjs",
+				"name": "Next.js",
+				"type": "devicon"
+			},
+			{
+				"key": "react",
+				"name": "React",
+				"type": "devicon"
+			},
+			{
+				"key": "typescript",
+				"name": "TypeScript",
+				"type": "devicon"
+			},
+			{
+				"key": "postgresql",
+				"name": "PostgreSQL",
+				"type": "devicon"
+			},
+			{
+				"key": "tailwindcss",
+				"name": "Tailwind CSS",
+				"type": "devicon"
+			},
+			{
+				"key": "git",
+				"name": "Git",
+				"type": "devicon"
+			}
+		]
+	},
+	{
 		"project": "The coder",
 		"url": "https://thecoder.in",
 		"repo": "Private",
 		"descriptionTitle": "E-learning platform",
 		"description": "Empowering Learning, One Course at a Time: Your Path to Success Begins Here",
-		"imageOptions": [],
+		"imageOptions": {
+			"presentation": "screenshot"
+		},
 		"redirect": "https://thecoder.in",
 		"images": [
 			{
 				"key": "mock-stack",
 				"hover": "right",
-				"h": "600",
-				"w": "1020",
-				"url": "/img/msc-mock_stack/newTheCoder.png"
+				"h": "768",
+				"w": "1584",
+				"url": "/img/msc-mock_stack/thecoder-elearning-screenshot.png"
 			}
 		],
 		"stack": [
@@ -50,81 +151,6 @@
 			{
 				"key": "css3",
 				"name": "CSS3",
-				"type": "devicon"
-			},
-			{
-				"key": "sass",
-				"name": "SCSS",
-				"type": "devicon"
-			},
-			{
-				"key": "git",
-				"name": "Git(Hub)",
-				"type": "devicon"
-			}
-		]
-	},
-	{
-		"project": "Social Schedule",
-		"url": "https://social-schedule.vercel.app",
-		"repo": "Private",
-		"descriptionTitle": "Social media management Tool",
-		"description": " Manage multiple social media platform at one Place. Built on Next.js and React.",
-		"redirect": "https://social-schedule.vercel.app/",
-		"imageOptions": [
-			{
-				"key": "size",
-				"value": "large"
-			}
-		],
-		"images": [
-			{
-				"key": "portfolio",
-				"hover": "left",
-				"h": "700",
-				"w": "606",
-				"url": "/img/msc-mock_stack/cropdSocail.png"
-			}
-		],
-		"stack": [
-			{
-				"key": "nextjs",
-				"name": "Next.js",
-				"type": "devicon"
-			},
-			{
-				"key": "react",
-				"name": "React",
-				"type": "devicon"
-			},
-			{
-				"key": "nodejs",
-				"name": "Node.js",
-				"type": "devicon"
-			},
-			{
-				"key": "mongodb",
-				"name": "MongoDB",
-				"type": "devicon"
-			},
-			{
-				"key": "javascript",
-				"name": "JavaScript",
-				"type": "devicon"
-			},
-			{
-				"key": "html5",
-				"name": "HTML5",
-				"type": "devicon"
-			},
-			{
-				"key": "css3",
-				"name": "CSS3",
-				"type": "devicon"
-			},
-			{
-				"key": "tailwind",
-				"name": "Tailwind",
 				"type": "devicon"
 			},
 			{

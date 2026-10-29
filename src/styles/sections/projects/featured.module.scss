@@ -131,6 +131,106 @@
   }
 }
 
+.browserPreview {
+  .imageAnimationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 1.5rem 1.5rem 1.5rem 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+
+    > div,
+    > div > div,
+    > div > div > span {
+      display: block;
+      position: static !important;
+      width: 100%;
+      height: auto;
+    }
+
+    > div > div > span {
+      right: auto !important;
+    }
+
+    img {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+}
+
+.screenshotPreview {
+  align-self: center;
+  height: auto;
+  aspect-ratio: auto;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+
+  .imageAnimationContainer {
+    --preview-accent: var(--neon-1-1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    inset: auto;
+    width: auto;
+    height: auto !important;
+    min-height: 0;
+    aspect-ratio: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid var(--primary-dark);
+    border-radius: 1.25rem;
+    background: var(--background-dim2);
+    box-shadow:
+      0 1.5rem 4rem rgba(0, 0, 0, 0.3),
+      0 0 3rem color-mix(in srgb, var(--preview-accent) 24%, transparent);
+    padding-top: 1.75rem;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 1.75rem;
+      content: '';
+      background:
+        radial-gradient(circle at 1.25rem 50%, #ff5f57 0 0.35rem, transparent 0.4rem),
+        radial-gradient(circle at 2.5rem 50%, #febc2e 0 0.35rem, transparent 0.4rem),
+        radial-gradient(circle at 3.75rem 50%, #28c840 0 0.35rem, transparent 0.4rem),
+        linear-gradient(180deg, var(--background-dim2), var(--background-dim));
+      border-bottom: 1px solid var(--primary-dark);
+    }
+
+    > div,
+    > div > div,
+    > div > div > span {
+      display: block;
+      position: static !important;
+      width: 100%;
+      height: auto;
+    }
+
+    > div > div > span {
+      right: auto !important;
+    }
+
+    img {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+  &:nth-of-type(2n) .imageAnimationContainer {
+    --preview-accent: var(--neon-2-1);
+  }
+}
+
 .privateOr {
   display: flex;
   flex-direction: row;
@@ -279,6 +379,27 @@
       .imageContainer {
         height: 100px;
         width: 100%;
+      }
+
+      .browserPreview {
+        height: 220px;
+
+        .imageAnimationContainer {
+          inset: 0;
+        }
+      }
+
+      .screenshotPreview {
+        align-self: stretch;
+        flex: 0 0 auto;
+        height: auto;
+        min-height: 0;
+        aspect-ratio: auto;
+
+        .imageAnimationContainer {
+          inset: 0;
+          height: auto !important;
+        }
       }
 
       .imageAnimationContainer {
